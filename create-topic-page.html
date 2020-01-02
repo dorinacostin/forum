@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1364fd64f.js"></script>
+    <title>Forum</title>
+  </head>
+  <body>
+    <header>
+     <section class="head bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 drop px-0">
+            <div class="dropdown my-3">
+              <button class="btn font-weight-bold px-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/message_icon1.svg" class="img-fluid pr-2">
+                Unity
+                <i class="fas fa-angle-down ml-2"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Blog</a>
+                <a class="dropdown-item" href="#">About</a>
+                <a class="dropdown-item" href="#">Store</a>
+                <a class="dropdown-item" href="#">Mobile App</a>
+                <a class="dropdown-item" href="#">Advertise</a>
+                <a class="dropdown-item" href="#">Need Help</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex justify-content-between search">
+            <form class="form-inline md-form form-sm mt-0">
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input class="form-control form-control-sm ml-3 w-75" type="text"placeholder="Search all forums" aria-label="Search">
+            </form>
+
+              <div class="dropdown my-3">
+                <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Topic
+                 <i class="fas fa-angle-down ml-2"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right py-0">
+                  <div class="form-check py-2 ">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label ml-1" for="defaultCheck1">
+                      Search Titles Only
+                    </label>
+                  </div>
+                   <div class="form-check py-2 ">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label ml-1" for="defaultCheck1">
+                      Show Results as Posts
+                    </label>
+                  </div>
+                </div>
+              </div>
+           </div>
+          <div class="col-4">
+            <div class="row">
+                <div class="dropdown topic my-3 pl-3">
+                  <button class="btn px-2" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Latest Topics <i class="fas fa-bars ml-2"></i>
+                  </button>
+                  <div class="dropdown-menu py-0 pt-2" aria-labelledby="dropdownMenu2">
+                      <div class="row pt-2">
+                        <div class="col-6">
+                           <ul class="px-0">
+                             <li><a href="#">New</a></li>
+                             <li><a href="#">Unread</a></li>
+                             <li><a href="#">Groups</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-6">
+                           <ul class="px-0">
+                             <li><a href="#">Users</a></li>
+                             <li><a href="#">Tags</a></li>
+                             <li><a href="#">Shortcuts</a></li>
+                           </ul>
+                        </div>
+                      </div>
+                      <div class="row pt-2">
+                        <div class="col-6">
+                          <span>Categories</span>
+                           <ul class="px-3 categories">
+                             <li><a href="#">Hobbies</a></li>
+                             <li><a href="#">Video</a></li>
+                             <li><a href="#">Arts</a></li>
+                             <li><a href="#">Gaming</a></li>
+                             <li><a href="#">Exchange</a></li>
+                             <li><a href="#">Entertainment</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-6 mt-4">
+                           <ul class="px-3 categories">
+                             <li><a href="#">Social</a></li>
+                             <li><a href="#">Random</a></li>
+                             <li><a href="#">Tech</a></li>
+                             <li><a href="#">Science</a></li>
+                             <li><a href="#">Pets</a></li>
+                             <li><a href="#">Education</a></li>
+                           </ul>
+                        </div>
+                      </div>
+                      <div class="row pt-2">
+                        <div class="col-6">
+                           <ul class="px-0">
+                             <li><a href="#">Support</a></li>
+                             <li><a href="#">Blog</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-6">
+                           <ul class="px-0">
+                             <li><a href="#">Forum Rules</a></li>
+                             <li><a href="#">About</a></li>
+                           </ul>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="dropdown notification my-3 mx-2">
+                <button class="btn notification" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <i class="far fa-bell"></i>
+                 <span class="quantity">6</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item px-4 py-3" href="#">
+                    <div class="row">
+                      <i class="far fa-heart mx-3 pt-1"></i>
+                      <span>Roswell.16 feb, 19</span>
+                    </div>
+                    <p>Which movie have you watched recently?</p>
+                  </a>
+                   <a class="dropdown-item px-4 py-3" href="#">
+                    <div class="row">
+                      <i class="far fa-comment-dots mx-3 pt-1"></i>
+                      <span>Callis.16 feb, 19</span>
+                    </div>
+                    <p>I got an amzon thingie!</p>
+                  </a>
+                  <a class="dropdown-item px-4 py-3" href="#">
+                    <div class="row">
+                      <i class="far fa-sun mx-3 pt-1"></i>
+                      <span>Earned Badge.16 feb, 19</span>
+                    </div>
+                    <div class="row pt-2">
+                      <img src="img/tolk.png" class="img-fluid ml-5">
+                       <p class="pl-3">Lets Tolk</p>
+                    </div>
+                  </a>
+                   <a class="dropdown-item px-4 py-3" href="#">
+                    <div class="row">
+                      <i class="far fa-sun mx-3 pt-1"></i>
+                      <span>Earned Badge. 20 feb, 19</span>
+                    </div>
+                    <div class="row pt-2">
+                      <img src="img/face.png" class="img-fluid ml-5">
+                       <p class="pl-3 pt-2">Intermediate</p>
+                    </div>
+                  </a>
+                    <a class="dropdown-item px-4 py-3" href="#">
+                    <div class="row">
+                      <i class="fas fa-link mx-3 pt-1"></i>
+                      <span>Callis.16 feb, 19</span>
+                    </div>
+                    <p>Need Video file of that chat.</p>
+                  </a>
+                  <a class="dropdown-item bg-light" href="#">
+                    <p class="text-muted mb-0">view older notifications...</p>
+                  </a>
+                  </div>
+                </div>
+              <div class="row user my-3">
+                <div><span class="text-white ml-3">A</span></div>
+                <div class="dropdown notification mx-2">
+                <button class="btn notification" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 azyrusmax
+                 <i class="fas fa-chevron-down pl-2"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuButton">
+                    <ul class="list-group list-group-horizontal px-4 py-3">
+                      <li><a href="#"><i class="far fa-bookmark px-3"></i></a></li>
+                      <li><a href="#"><i class="far fa-comment-alt px-3"></i></a></li>
+                      <li><a href="#"><i class="fas fa-wrench px-3"></i></a></li>
+                      <li><a href="#"><i class="fas fa-sign-out-alt px-3"></i></a></li>
+                    </ul>
+                    <ul class="mb-0 pl-0 py-3">
+                      <li><a href="#"><p class="mb-1">Dashboard</p></a></li>
+                      <li><a href="#"><p class="mb-1">Badges</p></a></li>
+                      <li><a href="#"><p class="mb-1">My Grpups</p></a></li>
+                      <li><a href="#"><p class="mb-1">Notifications</p></a></li>
+                      <li><a href="#"><p class="mb-1">Topics</p></a></li>
+                      <li><a href="#"><p class="mb-1">Likes</p></a></li>
+                      <li><a href="#"><p class="mb-1">Solved</p></a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div> 
+     </div>  
+    </section>
+   </header>
+   <section class="new-topic my-5">
+    <div class="container bg-white p-4">
+       <div class="row d-flex justify-content-between p-3">
+        <div class="">
+          <img src="img/message_icon2.png" class="img-fluid">
+          <span class="pl-2 text-body font-weight-bold">Create New Thread</span>
+        </div>
+        <span class="text-end text-muted d-flex justify-content-right">Forum Guidelines</span>
+      </div>
+      <div class="form py-3">
+       <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Thread Title</label>
+            <input type="text" class="form-control bg-light" placeholder="Add here">
+          </div>
+          <div class="row">
+            <div class="col-6 form-group">
+              <label for="exampleFormControlSelect1">Select Category</label>
+              <select class="form-control bg-light" id="exampleFormControlSelect1">
+                <option>Choose</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+              <div class="col-6 form-group ">
+                <label for="exampleFormControlSelect1">Select Sub Category</label>
+                <select class="form-control bg-light" id="exampleFormControlSelect1">
+                  <option>Choose</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+        </form>
+        <p class="font-weight-bold">Description</p>
+        <div class="description border">
+          <div class="row mx-1 d-flex justify-content-between">
+            <ul class="list-group list-group-horizontal align-self-center">
+              <li class="list-item"><i class="far fa-comments p-3"></i></li>
+              <li class="list-item"><i class="fas fa-bold p-3"></i></li>
+              <li class="list-item"><i class="fas fa-italic p-3"></i></li>
+              <li class="list-item"><i class="fas fa-link p-3"></i></li>
+              <li class="list-item"><i class="fas fa-italic p-3"></i></li>
+            </ul>
+             <button type="button" class="btn btn btn-secondary m-3 py-1">Preview</button>
+          </div>
+          <div class="col-12 mx-0 px-0">
+            <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="6">## Lets start talking
+            Adding amazing books to your summer reading list can be as simple as signing up for the BuzzFeed Books newsletter! You'll get a review of a new book you might love every Wednesday, plus much more twice a week: great jokes and quizzes, wonderful lists, powerful essays, all the Harry Potter and YA buzz you can handle, and of course, even more book recommendations. So make some space in your beach bag now — because you're going to have a lot to read this summer.
+            </textarea>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <label for="formGroupExampleInput" class="font-weight-bold">Add Tags</label>
+          <input type="text" class="form-control bg-light" id="formGroupExampleInput" placeholder="e.g. nature, science">
+        </div>
+        <div class="row ">
+          <div class="col-4">
+            <p class="font-weight-bold">Who can see this?</p>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Everyone</label>
+          </div>
+           <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Only Friends</label>
+          </div>
+          </div>
+           <div class="col-3">
+            <p class="font-weight-bold">Share on Socials</p>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="inlineRadio1"><i class="fab fa-facebook-square"></i></label>
+          </div>
+           <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="inlineRadio1"><i class="fab fa-twitter text-primary"></i></label>
+          </div>
+           <div class="form-check form-check-inline">
+           <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="inlineRadio1"><i class="fab fa-google-plus-g text-danger"></i></label>
+          </div>
+          </div>
+           <div class="col-5">
+            <p class="font-weight-bold">Is this a Mature Thread?</p>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Yes</label>
+          </div>
+           <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">No</label>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-end mt-4 px-3">
+       <button type="button" class="button-light mr-3">Cancel</button>
+       <button type="button" class="button">Create Thread</button>
+      </div> 
+    </div>
+   </section>
+   <section class="mt-3">
+     <div class="container">
+      <div class="row">
+        <i class="far fa-clock pr-3"></i>
+        <p class="font-weight-bold">This topic will close 6 months after the last reply.</p>
+      </div>
+      <div class="row head-chat">
+        <div class="col-5 px-0">
+          <p>Top</p> 
+        </div>
+        <div class="col-2 px-0">
+          <p>Category</p> 
+        </div>
+        <div class="col-2 px-0">
+          <p>Users</p> 
+        </div>
+        <div class="col-1 px-0">
+          <p>Replies</p> 
+        </div>
+        <div class="col-1 px-0">
+          <p>Views</p> 
+        </div>
+        <div class="col-1 px-0">
+          <p>Activity</p> 
+        </div>
+      </div>
+    </div>
+   </section>
+   <section>
+     <div class="container">
+      <div class="row chat bg-gray">
+        <div class="col-5 p-4">  
+          <h6 class="mb-0">Get your username drawn by the other users of unity! or a drawing based on what you do</h6>
+          <div class="row tags pl-2 mt-2">
+            <p class="tag1 px-1 mx-1 text-white">gaming</p>
+            <p class="tag2 px-1 mx-1 text-white">nature</p>
+            <p class="tag3 px-1 mx-1 text-white">videos</p>
+          </div>
+        </div>
+        <div class="col-2 align-self-center d-flex justify-content-center">
+          <p class="mb-0 category">Video</p>
+        </div>
+        <div class="col-2 align-self-center">
+          <span class="color3 text-white">L</span> 
+          <span class="color5 text-white">F</span>
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body font-weight-bold">123</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">6.5k</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">12d</span> 
+        </div>
+      </div>
+    </div>
+   </section>
+   <section>
+     <div class="container">
+      <div class="row chat bg-white">
+        <div class="col-5 p-4">  
+          <a href="single_topic_page.html"><h6 class="mb-0">Which movie have you watched most recently?</h6></a>
+        </div>
+        <div class="col-2 align-self-center d-flex justify-content-center">
+          <p class="mb-0 category">Movie</p>
+        </div>
+        <div class="col-2 align-self-center">
+          <span class="color2 text-white">N</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body font-weight-bold">57</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">9.5k</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">7m</span> 
+        </div>
+      </div>
+    </div>
+   </section>
+   <section>
+     <div class="container">
+      <div class="row chat bg-gray">
+        <div class="col-5 p-4">  
+          <h6 class="mb-0">This post contails spoiler about Star Wars Movie.</h6>
+        </div>
+        <div class="col-2 align-self-center d-flex justify-content-center">
+          <p class="mb-0 category">Q&As</p>
+        </div>
+        <div class="col-2 align-self-center">
+          <span class="color5 text-white">R</span>
+          <span class="color6 text-white">A</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body font-weight-bold">57</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">9.5k</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">7m</span> 
+        </div>
+      </div>
+    </div>
+   </section>
+   <section>
+     <div class="container">
+      <div class="row chat bg-white">
+        <div class="col-5 p-4">  
+          <h6 class="mb-0">Take a virtual tour of the world’s creepiest basement!</h6>
+        </div>
+        <div class="col-2 align-self-center d-flex justify-content-center">
+          <p class="mb-0 category">Gaming</p>
+        </div>
+        <div class="col-2 align-self-center">
+          <span class="color6 text-white">S</span> 
+          <span class="color1 text-white">R</span>
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body font-weight-bold">98</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">1.5k</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">13d</span> 
+        </div>
+      </div>
+    </div>
+   </section>
+   <section>
+     <div class="container">
+      <div class="row chat bg-gray">
+        <div class="col-5 p-4">  
+          <h6 class="mb-0">Who’s playing Overwatch?</h6>
+        </div>
+        <div class="col-2 align-self-center d-flex justify-content-center">
+          <p class="mb-0 category">Hobbies</p>
+        </div>
+        <div class="col-2 align-self-center">
+          <span class="color6 text-white">A</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body font-weight-bold">23</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">6.5k</span> 
+        </div>
+        <div class="col-1 align-self-center">
+          <span class="text-body">12d</span> 
+        </div>
+      </div>
+    </div>
+   <footer class="bg-white mt-5">
+    <div class="container">
+      <section>
+      <div class="row d-flex justify-content-between">
+          <div class="unity">
+            <a href="index.html" class="text-body font-weight-bold"><img src="img/message_icon1.svg" class="pr-2">Unity</a>
+          </div>
+          <div>
+          <ul class="list-group list-group-horizontal">
+            <li><a href="#" class="pr-4"><i class="fas fa-umbrella pr-2"></i>Suport</a></li>
+            <li><a href="#" class="pr-4">About</a></li>
+            <li><a href="#" class="pr-4">Contact Us</a></li>
+            <li><a href="#">The Team</a></li>
+          </ul>
+        </div>
+      </div>
+      </section>
+      <section>
+         <div class="row d-flex justify-content-between terms">
+          <div>
+            <ul class="list-group list-group-horizontal">
+              <li><a href="#" class="pr-4">© 2019 unity.com</a></li>
+              <li><a href="#" class="pr-4">Terms</a></li>
+              <li><a href="#" class="pr-4">Privacy</a></li>
+              <li><a href="#">Send Feedback</a></li>
+            </ul>
+          </div>
+
+          <div>
+          <ul class="list-group list-group-horizontal">
+            <li><a href="#" class="pr-3"><i class="fab fa-facebook-square text-body"></i></a></li>
+            <li><a href="#" class="pr-3"><i class="fab fa-twitter text-body"></i></a></li>
+            <li><a href="#" class="pr-3"><i class="fab fa-google-plus-g text-body"></i></a></li>
+            <li><a href="#"><i class="fab fa-dribbble text-body"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      </section>
+    </div>
+   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

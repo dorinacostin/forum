@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1364fd64f.js"></script>
+    <title>Forum</title>
+  </head>
+  <body>
+    <header>
+     <section class="head bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-2 drop px-0">
+              <div class="dropdown my-3">
+                <a href="index.html"><img src="img/message_icon1.svg" class="img-fluid pr-2"></a>
+                 <button class="btn font-weight-bold px-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Unity
+                   <i class="fas fa-angle-down ml-2"></i>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Blog</a>
+                    <a class="dropdown-item" href="#">About</a>
+                    <a class="dropdown-item" href="#">Store</a>
+                    <a class="dropdown-item" href="#">Mobile App</a>
+                    <a class="dropdown-item" href="#">Advertise</a>
+                    <a class="dropdown-item" href="#">Need Help</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 d-flex justify-content-between search">
+                <form class="col-10 form-inline md-form form-sm mt-0">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                  <input class="form-control form-control-sm ml-3 w-75" type="text"placeholder="Search all forums" aria-label="Search">
+                </form>
+                <div class="dropdown my-3">
+                  <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Topic
+                   <i class="fas fa-angle-down ml-2"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right py-0">
+                    <div class="form-check py-2 ">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label ml-1" for="defaultCheck1">
+                        Search Titles Only
+                      </label>
+                    </div>
+                     <div class="form-check py-2 ">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label ml-1" for="defaultCheck1">
+                        Show Results as Posts
+                      </label>
+                    </div>
+                  </div>
+                </div>
+             </div>
+            <div class="col-4">
+              <div class="row">
+                  <div class="dropdown topic my-3 pl-3">
+                    <button class="btn px-2" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Latest Topics <i class="fas fa-bars ml-2"></i>
+                    </button>
+                    <div class="dropdown-menu py-0 pt-2" aria-labelledby="dropdownMenu2">
+                        <div class="row pt-2">
+                          <div class="col-6">
+                             <ul class="px-0">
+                               <li><a href="#">New</a></li>
+                               <li><a href="#">Unread</a></li>
+                               <li><a href="#">Groups</a></li>
+                             </ul>
+                          </div>
+                          <div class="col-6">
+                             <ul class="px-0">
+                               <li><a href="#">Users</a></li>
+                               <li><a href="#">Tags</a></li>
+                               <li><a href="#">Shortcuts</a></li>
+                             </ul>
+                          </div>
+                        </div>
+                        <div class="row pt-2">
+                          <div class="col-6">
+                            <span>Categories</span>
+                             <ul class="px-3 categories">
+                               <li><a href="#">Hobbies</a></li>
+                               <li><a href="#">Video</a></li>
+                               <li><a href="#">Arts</a></li>
+                               <li><a href="#">Gaming</a></li>
+                               <li><a href="#">Exchange</a></li>
+                               <li><a href="#">Entertainment</a></li>
+                             </ul>
+                          </div>
+                          <div class="col-6 mt-4">
+                             <ul class="px-3 categories">
+                               <li><a href="#">Social</a></li>
+                               <li><a href="#">Random</a></li>
+                               <li><a href="#">Tech</a></li>
+                               <li><a href="#">Science</a></li>
+                               <li><a href="#">Pets</a></li>
+                               <li><a href="#">Education</a></li>
+                             </ul>
+                          </div>
+                        </div>
+                          <div class="row pt-2">
+                          <div class="col-6">
+                             <ul class="px-0">
+                               <li><a href="#">Support</a></li>
+                               <li><a href="#">Blog</a></li>
+                             </ul>
+                          </div>
+                          <div class="col-6">
+                             <ul class="px-0">
+                               <li><a href="#">Forum Rules</a></li>
+                               <li><a href="#">About</a></li>
+                             </ul>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown notification my-3 mx-2">
+                  <button class="btn notification" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <i class="far fa-bell"></i>
+                   <span class="quantity">6</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="far fa-heart mx-3 pt-1"></i>
+                        <span>Roswell.16 feb, 19</span>
+                      </div>
+                      <p class="mb-0">Which movie have you watched recently?</p>
+                    </a>
+                     <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="far fa-comment-dots mx-3 pt-1"></i>
+                        <span>Callis.16 feb, 19</span>
+                      </div>
+                      <p class="mb-0">I got an amzon thingie!</p>
+                    </a>
+                    <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="far fa-sun mx-3 pt-1"></i>
+                        <span>Earned Badge.16 feb, 19</span>
+                      </div>
+                      <div class="row pt-2">
+                        <img src="img/tolk.png" class="img-fluid ml-5">
+                         <p class="pl-3 mb-0">Lets Tolk</p>
+                      </div>
+                    </a>
+                     <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="far fa-sun mx-3 pt-1"></i>
+                        <span>Earned Badge. 20 feb, 19</span>
+                      </div>
+                      <div class="row pt-2">
+                        <img src="img/face.png" class="img-fluid ml-5">
+                         <p class="pl-3 pt-2 mb-0">Intermediate</p>
+                      </div>
+                    </a>
+                      <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="fas fa-link mx-3 pt-1"></i>
+                        <span>Callis.16 feb, 19</span>
+                      </div>
+                      <p class="mb-0">Need Video file of that chat.</p>
+                    </a>
+                    <a class="dropdown-item bg-light" href="#">
+                      <p class="text-muted mb-0">view older notifications...</p>
+                    </a>
+                    </div>
+                  </div>
+                <div class="row user-initial my-3">
+                  <a href="user_summary.html" class="mt-1"><span class="color2 text-white ml-3">A</span></a>
+                  <div class="dropdown notification mx-2">
+                  <button class="btn notification" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   azyrusmax
+                   <i class="fas fa-chevron-down pl-2"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuButton">
+                      <ul class="list-group list-group-horizontal px-4 pt-3 border-bottom pb-3">
+                        <li><a href="user_summary.html"><i class="far fa-bookmark px-3 text-muted"></i></a></li>
+                        <li><a href="user_messages.html"><i class="far fa-comment-alt px-3 text-muted"></i></a></li>
+                        <li><a href="user_settings.html"><i class="fas fa-wrench px-3 text-muted"></i></a></li>
+                        <li><a href="sign-in.html"><i class="fas fa-sign-out-alt px-3 text-muted"></i></a></li>
+                      </ul>
+                      <ul class="mb-0 pl-0 py-3">
+                        <li><a href="#"><p class="mb-1">Dashboard</p></a></li>
+                        <li><a href="#"><p class="mb-1">Badges</p></a></li>
+                        <li><a href="#"><p class="mb-1">My Grpups</p></a></li>
+                        <li><a href="#"><p class="mb-1">Notifications</p></a></li>
+                        <li><a href="#"><p class="mb-1">Topics</p></a></li>
+                        <li><a href="#"><p class="mb-1">Likes</p></a></li>
+                        <li><a href="#"><p class="mb-1">Solved</p></a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+               <div class="img my-4 ml-3"><a href="create_topic_page.html"><img src="img/message_icon2.png"></a></div>
+             </div>
+            </div>
+          </div>
+        </div> 
+       </div>  
+      </section>
+    </header>
+  <section class="user_notifications py-5">
+    <div class="container">
+      <div class="row user_summary bg-transparent my-3">
+       <span class="color3 text-white ml-3">A</span>
+       <h5 class="align-self-center ml-3">azyrusmax</h5>
+       <button type="button" class="my-4 ml-5 px-4">Follow</button>
+      </div>
+    </div>  
+  </section>
+  <section class="user-menu">
+    <div class="container">
+      <div class="row border-bottom py-3 d-flex justify-content-between">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-item"><a href="user_summary.html"class="pr-3">Summary</a></li>
+          <li class="list-item"><a href="notifications.html" class="pr-3 text-muted"><i class="fas fa-bell pr-1 text-muted"></i>Notifications</a></li>
+          <li class="list-item"><a href="user_friends.html" class="pr-3"><i class="fas fa-user pr-1 text-muted"></i>Friends</a></li>
+          <li class="list-item"><a href="user-messages.html" class="pr-3"><i class="fas fa-envelope pr-1 text-muted"></i>Messages</a></li>
+          <li class="list-item"><a href="user_badges.html" class="pr-3"><i class="fas fa-certificate pr-1 text-muted"></i>Badges</a></li>
+          <li class="list-item"><a href="user_settings.html" class="pr-3 text-warning"><i class="fas fa-cog pr-1 text-warning"></i>Settings</a></li>
+        </ul>
+        <div class="">
+          <a href="#"><i class="fas fa-user-plus pr-2 text-muted"></i></a>
+          <a href="#"><i class="fas fa-comment-alt pr-2 text-muted"></i></a>
+          <a href="#"><i class="fas fa-flag text-muted"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-2 px-0 pt-4">
+          <ul class="pl-0">
+            <li><a href="user_summary.html" class="text-body font-weight-bold">Account</a></li>
+            <li><a href="#" class="text-muted">Emails</a></li>
+            <li><a href="notifications.html" class="text-muted">Notifications</a></li>
+            <li><a href="#" class="text-muted">Mentions</a></li>
+            <li><a href="#" class="text-muted">Edits</a></li>
+            <li><a href="#" class="text-muted">Badges Earned</a></li>
+            <li class="mt-2"><a href="#" class="bg-gray py-2 px-3 text-muted"><i class="fas fa-times pr-3 text-muted"></i>Dismiss All</a></li>
+          </ul>
+        </div>
+        <div class="col-10 mt-4">
+          <h5 class="font-weight-bold border-bottom pb-3">Account</h5>
+          <form>
+             <div class="form-group">
+              <label for="formGroupExampleInput">Username</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="@azyrusmax">
+              <small class="text-black-50">people can mention you as<span class="text-body"> @azyrusmax</span></small>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Email Address</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="@azyrusmax.com">
+              <small class="text-black-50">never shown to the public</small>
+            </div>
+          </form>
+         <div class="user_summary bg-transparent my-3">
+          <p class="pb-3">Profile Picture</p>
+          <span class="color3 text-white">A</span>
+          <a href="#"><i class="fas fa-pencil-alt bg-gray text-muted rounded-circle p-2 border border-white"></i></a>
+         </div>
+        <button type="button" class="my-4 px-3 py-2 bg-gray border-0">Save Changes</button>
+        <h5 class="font-weight-bold border-bottom pb-4">Profile</h5>
+        <span>About me</span>
+        <div class="col-12 mx-0 px-0">
+          <textarea class="mt-3 form-control bg-white" id="exampleFormControlTextarea1" rows="6">## Lets start talking</textarea>
+        </div>
+        <form class="mt-3">
+           <div class="form-group">
+           <div class="form-group">
+            <label for="exampleFormControlSelect1">Location</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>EU</option>
+              <option>GB</option>
+              <option>IT</option>
+              <option>FR</option>
+              <option>RU</option>
+            </select>
+           </div>
+           <div class="form-group">
+              <label for="formGroupExampleInput">Website</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="sfszGEsG.com">
+            </div>
+        </form>
+        <div class="bg-gray mx-0 px-3" style="height: 12rem;">
+          <div class="row pl-3 pt-3">
+            <i class="fas fa-pencil-alt bg-secondary p-3 text-light mr-3"></i>
+            <i class="fas fa-times bg-secondary p-3 text-light"></i>
+          </div>
+        </div>
+        <button type="button" class="my-4 px-3 py-2 bg-gray border-0">Save Changes</button>
+        <p>Featured Badges ( Select 3 )</p>
+        <div class="row mx-0">
+           <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1"><img src="img/man.png"style="width:3rem;" class="img-fluid"></label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1"><img src="img/bot2.png"style="width:3rem;" class="img-fluid"></label>
+          </div>
+           <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1"><img src="img/letter.png"style="width:3rem;" class="img-fluid"></label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1"><img src="img/talk2.png"style="width:3rem;" class="img-fluid"></label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1"><img src="img/video2.png"style="width:3rem;" class="img-fluid"></label>
+          </div>
+        </div>
+        <h5 class="font-weight-bold border-bottom pb-4 my-3">Emails</h5>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Include previous replies at the bottom of emails</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Never</option>
+              <option></option>
+            </select>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-black-50" for="exampleCheck1">Include an excerpt of replied to post in emails</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-black-50" for="exampleCheck1">Send me an email when someone messages me</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-black-50" for="exampleCheck1">end me an email when someone quotes me, replies to my post, mentions my @username, or invites me to a topic</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-black-50" for="exampleCheck1">Send me email notifications even when I am active on the site</label>
+          </div>
+          <small class="text-black-50">We'll only email you if we haven't seen you in the last 10 minutes.</small>
+          <p class="my-3">Activity Summary</p>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-black-50" for="exampleCheck1">When I don't visit here, send me an email summary of popular topics and replies</label>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Daily</option>
+              <option>Weekly</option>
+              <option>Monthly</option>
+            </select>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-black-50" for="exampleCheck1">Include content from new users in summary emails</label>
+          </div>
+          <p class="my-3">Mailing list mode</p>
+           <div class="form-group form-check mb-0">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-black-50" for="exampleCheck1">Enable mailing list mode</label>
+          </div>
+          <div class="col-5 px-0">
+            <small class="text-black-50">This setting overrides the activity summary.
+            Muted topics and categories are not included in these emails.</small>
+          </div>
+          <button type="button" class="my-4 px-3 py-2 bg-gray border-0">Save Changes</button>
+          <h5 class="font-weight-bold border-bottom pb-4 mb-4">Notifications</h5>
+           <div class="form-group">
+            <label for="exampleFormControlSelect1">Consider topics new when</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Created in last day</option>
+              <option>Created in last 2 days</option>
+              <option>Created in last 4 days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Automatically track topics I enter</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>After 1 minutes</option>
+              <option>After 3 minutes</option>
+              <option>After 5 minutes</option>
+              <option>Never</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">When I post in a topic, set that topic to</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Tracking</option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Notify when liked</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>First time a post is liked and daily</option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+          <p class="mb-0">Desktop Notifications</p>
+            <div class="col-5 px-0">
+            <small class="text-black-50">Note: You have to change this setting on every browser you use.</small>
+          </div>
+          <button type="button" class="my-4 px-3 py-2 bg-gray border-0"><i class="far fa-bell-slash mr-3"></i>Turn Off Notifications</button>
+           <!--<button type="button" class="my-4 px-3 py-2 bg-gray border-0"><i class="far fa-bell mr-3"></i>Turn On Notifications</button>-->
+           <p>Blocked Users</p>
+           <input type="email" class="form-control text-muted" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add Username here">
+            <div class="row d-flex justify-content-between py-3 bg-white px-4 mx-0 mt-4">
+              <div class="row user-initial">
+                <span class="color3 text-white ml-2 mr-3">L</span>
+                <p class="mb-0 align-self-center">Lucy</p> 
+              </div>
+              <button type="button" class="px-3 bg-gray border-0">Unblock</button>
+            </div>
+            <div class="row d-flex justify-content-between py-3 bg-gray px-4 mx-0">
+              <div class="row user-initial">
+                <span class="color6 text-white ml-2 mr-3">N</span>
+                <p class="mb-0 align-self-center">Nelly</p> 
+              </div>
+              <button type="button" class="px-3 bg-light border-0">Unblock</button>
+            </div>
+            <div class="row d-flex justify-content-between py-3 bg-white px-4 mx-0">
+              <div class="row user-initial">
+                <span class="color4 text-white ml-2 mr-3">S</span>
+                <p class="mb-0 align-self-center">Sisi</p> 
+              </div>
+              <button type="button" class="px-3 bg-gray border-0">Unblock</button>
+            </div>
+            <button type="button" class="my-4 px-3 py-2 bg-gray border-0">Save Changes</button>
+            <h5 class="font-weight-bold border-bottom pb-4 my-3">Categories</h5>
+            <div class="categories mt-3">
+              <i class="far fa-eye pr-2"></i><span>Watched</span>
+              <input type="email" class="form-control text-muted" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div class="col-8 px-0 mb-3">
+               <small class="text-black-50">You will automatically watch all topics in these categories. You will be notified of all new posts and topics, and a count of new posts will also appear next to the topic.</small>
+              </div>
+              <a href="#">Show watched threads</a>
+            </div>
+            <div class="categories mt-3">
+              <i class="far fa-file-alt pr-2"></i><span>Watched</span>
+              <input type="email" class="form-control text-muted" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div class="col-8 px-0 mb-3">
+               <small class="text-black-50">You will automatically track all topics in these categories. A count of new posts will appear next to the topic.</small>
+              </div>
+              <a href="#">Show tracked threads</a>
+            </div>
+            <div class="categories mt-3">
+              <span>Muted</span>
+              <input type="email" class="form-control text-muted" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div class="col-8 px-0 mb-3">
+               <small class="text-black-50">You will not be notified of anything about new topics in these categories, and they will not appear in latest.</small>
+              </div>
+              <a href="#">Show muted threads</a>
+            </div>
+            <button type="button" class="my-4 px-3 py-2 bg-gray border-0">Save Changes</button>
+             <h5 class="font-weight-bold border-bottom pb-4 my-3">Tags</h5>
+             <div class="categories mt-3">
+              <i class="far fa-eye pr-2"></i><span>Watched</span>
+              <input type="email" class="form-control text-muted" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div class="col-8 px-0 mb-3">
+               <small class="text-black-50">You will automatically watch all topics in these categories. You will be notified of all new posts and topics, and a count of new posts will also appear next to the topic.</small>
+              </div>
+              <a href="#">Show watched threads</a>
+            </div>
+            <div class="categories mt-3">
+              <i class="far fa-file-alt pr-2"></i><span>Watched</span>
+              <input type="email" class="form-control text-muted" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div class="col-8 px-0 mb-3">
+               <small class="text-black-50">You will automatically track all topics in these categories. A count of new posts will appear next to the topic.</small>
+              </div>
+              <a href="#">Show tracked threads</a>
+            </div>
+            <div class="categories mt-3">
+              <span>Muted</span>
+              <input type="email" class="form-control text-muted" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div class="col-8 px-0 mb-3">
+               <small class="text-black-50">You will not be notified of anything about new topics in these categories, and they will not appear in latest.</small>
+              </div>
+              <a href="#">Show muted threads</a>
+            </div>
+            <button type="button" class="my-4 px-3 py-2 bg-gray border-0">Save Changes</button>
+            <h5 class="font-weight-bold border-bottom pb-4 my-3">Interface</h5>
+             <div class="categories mt-3">
+              <span>Interface language</span>
+              <input type="email" class="form-control text-muted" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div class="col-8 px-0 mb-3">
+               <small class="text-black-50">User interface language. It will change when you refresh the page.</small>
+              </div>
+            </div>
+            <span>Other</span>
+            <div class="form-group form-check mt-3">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-black-50" for="exampleCheck1">Open all external links in a new tab</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-black-50" for="exampleCheck1">Enable quote reply for highlighted text</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-black-50" for="exampleCheck1">Show new / updated topic count on browser icon</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-black-50" for="exampleCheck1">Don't jump to my post after I reply</label>
+            </div>
+            <button type="button" class="my-4 px-3 py-2 bg-gray border-0">Save Changes</button>
+      </div>
+    </div>
+  </section>
+   <footer class="bg-white mt-5">
+    <div class="container">
+      <section>
+      <div class="row d-flex justify-content-between">
+          <div class="unity">
+            <a href="index.html" class="text-body font-weight-bold"><img src="img/message_icon1.svg" class="pr-2">Unity</a>
+          </div>
+          <div>
+          <ul class="list-group list-group-horizontal">
+            <li><a href="#" class="pr-4"><i class="fas fa-umbrella pr-2"></i>Suport</a></li>
+            <li><a href="#" class="pr-4">About</a></li>
+            <li><a href="#" class="pr-4">Contact Us</a></li>
+            <li><a href="#">The Team</a></li>
+          </ul>
+        </div>
+      </div>
+      </section>
+      <section>
+         <div class="row d-flex justify-content-between terms">
+          <div>
+            <ul class="list-group list-group-horizontal">
+              <li><a href="#" class="pr-4">© 2019 unity.com</a></li>
+              <li><a href="#" class="pr-4">Terms</a></li>
+              <li><a href="#" class="pr-4">Privacy</a></li>
+              <li><a href="#">Send Feedback</a></li>
+            </ul>
+          </div>
+          <div>
+          <ul class="list-group list-group-horizontal">
+            <li><a href="#" class="pr-3"><i class="fab fa-facebook-square text-body"></i></a></li>
+            <li><a href="#" class="pr-3"><i class="fab fa-twitter text-body"></i></a></li>
+            <li><a href="#" class="pr-3"><i class="fab fa-google-plus-g text-body"></i></a></li>
+            <li><a href="#"><i class="fab fa-dribbble text-body"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      </section>
+    </div>
+   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
