@@ -1,0 +1,140 @@
+header{
+  .drop{
+    .btn{
+      font-size: 1rem;
+    }
+  	a{
+  	  font-size: .9rem;
+  	  color: $text-color;
+  	}
+  }
+  .search{
+    border-left: $border-gray;
+    border-right: $border-gray;
+    .dropdown-menu{
+      width: 12rem;
+    }
+    input{
+      border: none;
+      color:$text-color;
+    }
+    .form-check{
+      border-bottom: $border-gray;
+      padding-left:2.5rem;
+      color:$text-color;
+      font-size: .85rem;
+    }
+  }
+  .topic{
+	  i:hover{
+	  color:$orange;
+	 }
+    .dropdown-menu{
+      width: 20rem;
+        .row{
+          border-bottom: $border-gray;
+          background: none;
+        }
+  	    a{
+          color:$text-color;
+          transition: all 1s ease;
+  	    }
+	      .col-6{
+	       padding-left:2.5rem;
+	      }
+      }
+      .categories{
+      	li{
+      	  list-style-type: disc;
+      	  color:$orange;
+      	}
+      } 	
+    }
+    .notification{
+      i{
+        position: relative;
+      }
+      .quantity{
+     	  font-size: .6rem;
+     	  position: absolute;
+     	  top: -.01rem;
+     	  left: .4rem;
+    	  padding: .04rem .25rem;
+    	  border-radius:.2rem;
+    	  color: #fff;
+    	  background: red;
+      }
+      .dropdown-menu{
+      	width: 15rem;
+      	a{
+          white-space: normal;
+          span{
+            font-size: .7rem;
+          }
+      	}
+      	p{
+          font-size: .8rem;
+          padding-left: 2rem;
+          color:$text-color;
+      	}
+      	img{
+      	  width:2.5rem; 
+      	}
+      }  
+    }
+    .user{
+      .dropdown-menu{
+        ul{
+       	  border-bottom: $border-gray;
+       		a{
+       		  border: none;
+       		  color:#5c6166;
+       		  transition: all 1s ease;
+	          p:hover{
+              color:$orange;
+	          }
+       		}
+       	}
+      }
+    }
+    .menu{
+      border-bottom: $border-gray;
+      .nav-link{
+       	color: #5b6065;
+       	font-size: .85rem;
+       	transition: all 1s ease;
+       	&:hover{
+       	  color:$color-orange;
+       	}
+      }
+      .btn{
+      	background: $color-gray;
+      	border-radius: 0;
+      }
+      .dropdown-menu{
+      	width: 18rem;
+      	padding-left: 2.5rem;
+      }
+      .list-item{
+      	list-style: disc;
+      	color:$orange;
+      	a{
+          color: $text-color;
+          font-size: .8rem;
+      	}
+      }
+      .page-item{
+      	font-size: .85rem;
+      }
+      .page-link{
+       	color:$text-body;
+       	background-color:$color-gray;
+       	transition: all 1s ease;
+       	&:hover{
+       	  background-color:$color-orange;
+       	  color: #fff;
+       	}
+      }
+    }
+  }
+  

@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f1364fd64f.js"></script>
-     <script type="text/javascript" src="js/main.js"></script>
-    <title>Costin Dorina</title>
+    <title>Messages</title>
   </head>
   <body>
-    <header>
+   <header>
     <section class="head bg-white">
       <div class="container">
         <div class="row">
@@ -207,117 +206,132 @@
     </div>  
     </section>
    </header>
-    <section class="user_notifications py-5">
-      <div class="container">
-        <div class="row user_summary bg-transparent my-3">
-         <span class="color3 text-white ml-3">A</span>
-         <h5 class="align-self-center ml-3">azyrusmax</h5>
-         <button type="button" class="my-4 ml-5 px-4">Follow</button>
+  <section class="user_notifications py-5">
+    <div class="container">
+      <div class="row user_summary bg-transparent my-3">
+       <span class="color3 text-white ml-3">A</span>
+       <h5 class="align-self-center ml-3">azyrusmax</h5>
+       <button type="button" class="my-4 ml-5 px-4">Follow</button>
+      </div>
+    </div>  
+  </section>
+  <section class="user-menu">
+    <div class="container">
+      <div class="row border-bottom py-3 d-flex justify-content-between">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-item"><a href="user_summary.html"class="pr-3">Summary</a></li>
+          <li class="list-item"><a href="notifications.html" class="pr-3"><i class="fas fa-bell pr-1 text-muted"></i>Notifications</a></li>
+          <li class="list-item"><a href="user_friends.html" class="pr-3"><i class="fas fa-user pr-1 text-muted"></i>Friends</a></li>
+          <li class="list-item"><a href="user-messages.html" class="pr-3 text-warning"><i class="fas fa-envelope pr-1 text-warning"></i>Messages</a></li>
+          <li class="list-item"><a href="user_badges.html" class="pr-3"><i class="fas fa-certificate pr-1 text-muted"></i>Badges</a></li>
+          <li class="list-item"><a href="user_settings.html" class="pr-3"><i class="fas fa-cog pr-1 text-muted"></i>Settings</a></li>
+        </ul>
+        <div class="">
+          <a href="#"><i class="fas fa-user-plus pr-2 text-muted"></i></a>
+          <a href="#"><i class="fas fa-comment-alt pr-2 text-muted"></i></a>
+          <a href="#"><i class="fas fa-flag text-muted"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sider">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 px-0 pt-4">
+          <ul class="pl-0">
+            <li class="mb-2"><a href="#" id="compose-btn" class="text-white active"><i class="far fa-envelope text-white mr-2"></i>Compose</a></li>
+            <li><a href="#" class="text-muted font-weight-bold">Inbox (2)</a></li>
+            <li><a href="#" class="text-muted">Sent</a></li>
+            <li><a href="#" class="text-muted">Trash</a></li>
+            <li><a href="#" class="text-muted">Archived</a></li>
+            <li><a href="#" class="text-muted">Spam</a></li>
+          </ul>
+        </div>
+        <div class="col-10">
+           <div class="row d-flex justify-content-between py-3 px-4 bg-white">
+              <div class="row user-initial">
+                <span class="color4 text-white ml-2 mr-3">G</span>
+                <h6 class="mb-0 align-self-center">Get your username drawn by the other users of unity! or a drawing based on what you do.</h6> 
+              </div>
+              <span class="align-self-center text-danger">15 Oct, 2019</span>
+              <div> <p class="pl-4 mx-3 text-black-50">Where did you see that mural near Dolores Park? I think I need to visit it.</p></div>
+            </div>
+            <div class="row d-flex justify-content-between py-3 px-4 bg-gray">
+              <div class="row user-initial">
+                <span class="color6 text-white ml-2 mr-3">H</span>
+                <h6 class="mb-0 align-self-center">Unity has been a DISASTER on Bulletin Boards this week</h6> 
+              </div>
+              <span class="align-self-center text-danger">15 Oct, 2019</span>
+              <div><p class="pl-4 mx-3 text-black-50">Hi ozstamps! I'm so sorry to hear that you've been having trouble with images displaying on your forum. I understand why that would be frustrating! ...</p></div>
+            </div>
+            <div class="row d-flex justify-content-between py-3 px-4 bg-white">
+              <div class="row user-initial">
+                <span class="color3 text-white ml-2 mr-3">M</span>
+                <h6 class="mb-0 align-self-center">If you don't use the app, why not?</h6> 
+              </div>
+              <span class="align-self-center text-muted">16 Oct, 2019</span>
+              <div><p class="pl-4 mx-3 text-black-50">@MickAneworderfan   Welcome to Unity! Thanks for taking the time to share your feedback.</p></div>
+            </div>
+            <div class="row d-flex justify-content-between py-3 px-4 bg-gray">
+              <div class="row user-initial">
+                <span class="color2 text-white ml-2 mr-3">R</span>
+                <h6 class="mb-0 align-self-center">Northern Germany meet up?</h6> 
+              </div>
+              <span class="align-self-center text-muted">16 Oct, 2019</span>
+              <div><p class="pl-4 mx-3 text-black-50">Awesome idea,   @GermanCaveJohnson   ! If you'd like to extend your invitation to the broader Imgurian group in Hamburg and/or need help planning, I can assist!</p></div>
+            </div>
         </div>
       </div>  
-    </section>
-    <section class="user-menu">
-      <div class="container">
-        <div class="row border-bottom py-3 d-flex justify-content-between">
-          <ul class="list-group list-group-horizontal">
-            <li class="list-item"><a href="user_summary.html"class="pr-3">Summary</a></li>
-            <li class="list-item"><a href="notifications.html" class="pr-3 text-warning"><i class="fas fa-bell pr-1 text-warning"></i>Notifications</a></li>
-            <li class="list-item"><a href="user_friends.html" class="pr-3"><i class="fas fa-user pr-1 text-muted"></i>Friends</a></li>
-            <li class="list-item"><a href="user_messages.html" class="pr-3"><i class="fas fa-envelope pr-1 text-muted"></i>Messages</a></li>
-            <li class="list-item"><a href="user_badges.html" class="pr-3"><i class="fas fa-certificate pr-1 text-muted"></i>Badges</a></li>
-            <li class="list-item"><a href="user_settings.html" class="pr-3"><i class="fas fa-cog pr-1 text-muted"></i>Settings</a></li>
-          </ul>
-          <div class="">
-            <a href="#"><i class="fas fa-user-plus pr-2 text-muted"></i></a>
-            <a href="#"><i class="fas fa-comment-alt pr-2 text-muted"></i></a>
-            <a href="#"><i class="fas fa-flag text-muted"></i></a>
+    </div>
+  </section>
+  <section id="popup-message" class="compose-message bg-white">
+    <div class="container">
+      <div class="row d-flex justify-content-between border-bottom py-4">
+        <div>
+          <img src="img/message_icon2.png">
+          <span class="font-weight-bold">Compose New Message</span>
+        </div>
+        <i class="fas fa-times"></i>
+      </div>
+      <form>
+        <div class="row mt-4">
+          <div class="col">
+            <label for="formGroupExampleInput">Add a User</label>
+            <input type="text" class="form-control" placeholder="Add Here">
+          </div>
+          <div class="col">
+            <label for="formGroupExampleInput">Subject</label>
+            <input type="text" class="form-control" placeholder="Add Here">
           </div>
         </div>
-      </div>
-    </section>
-    <section class="sider">
-      <div class="container">
-        <div class="row">
-          <div class="col-2 px-0 pt-4">
-            <ul class="pl-0">
-              <li><a href="#" class="text-body font-weight-bold">All</a></li>
-              <li><a href="#" class="text-muted">Responses</a></li>
-              <li><a href="#" class="text-muted">Likes Received</a></li>
-              <li><a href="#" class="text-muted">Mentions</a></li>
-              <li><a href="#" class="text-muted">Edits</a></li>
-              <li><a href="#" class="text-muted">Badges Earned</a></li>
-              <li class="mt-2"><a href="#" class="bg-gray py-2 px-3 text-muted"><i class="fas fa-times pr-3 text-muted"></i>Dismiss All</a></li>
-            </ul>
-          </div>
-          
-          <div class="col-10">
-            <div class="row d-flex justify-content-between py-3 bg-white px-4">
-              <div class="row user-initial">
-                <i class="far fa-gem align-self-center text-muted"></i>
-                <span class="color3 text-white ml-2 mr-3">L</span>
-                <p class="mb-0 align-self-center">Why my payment still pending?</p> 
-              </div>
-              <span class="align-self-center text-muted">12 Oct, 2019</span>
-            </div>
-            <div class="row d-flex justify-content-between py-3 px-4 bg-gray">
-              <div class="row user-initial">
-                <i class="far fa-sun align-self-center text-muted"></i>
-                <span class="color2 text-white ml-2 mr-3">M</span>
-                <p class="mb-0 align-self-center">Earned 'Advanced Badge'</p> 
-              </div>
-              <span class="align-self-center text-muted">13 Oct, 2019</span>
-            </div>
-            <div class="row d-flex justify-content-between py-3 bg-white px-4">
-              <div class="row user-initial">
-                <i class="fas fa-reply align-self-center text-muted"></i>
-                <span class="color6 text-white ml-2 mr-3">F</span>
-                <p class="mb-0 align-self-center">ribbble Invitations Giveaway!</p> 
-              </div>
-              <span class="align-self-center text-muted">15 Oct, 2019</span>
-            </div>
-            <div class="row d-flex justify-content-between py-3 px-4 bg-gray">
-              <div class="row user-initial">
-                <i class="fas fa-reply align-self-center text-muted"></i>
-                <span class="color4 text-white ml-2 mr-3">A</span>
-                <p class="mb-0 align-self-center">ribbble Invitations Giveaway!</p> 
-              </div>
-              <span class="align-self-center text-muted">15 Oct, 2019</span>
-            </div>
-            <div class="row d-flex justify-content-between py-3 bg-white px-4">
-              <div class="row user-initial">
-                <i class="fas fa-link align-self-center text-muted"></i>
-                <span class="color3 text-white ml-2 mr-3">R</span>
-                <p class="mb-0 align-self-center">Need psd documentation on Themeforest</p> 
-              </div>
-              <span class="align-self-center text-muted">1 Nov, 2019</span>
-            </div>
-
-          </div>
-          
-        </div>
-        
-      </div>
-    </section>
-
+        <p class="pt-3">Description</p>
+       <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="6">## Lets start talking</textarea>
+      </form> 
+      <div class="row d-flex justify-content-end">
+        <button type="button" class="my-4 mr-3 px-4 py-2 bg-gray border-0">Cancel</button>
+        <button type="button" class="my-4 mr-3 px-4 py-2 border-0 text-white active">Sent</button>
+      </div>    
+    </div>
+  </section>
    <footer class="bg-white mt-5">
     <div class="container">
       <section>
-      <div class="row d-flex justify-content-between">
+        <div class="row d-flex justify-content-between">
           <div class="unity">
             <a href="index.html" class="text-body font-weight-bold"><img src="img/message_icon1.svg" class="pr-2">Unity</a>
           </div>
           <div>
-          <ul class="list-group list-group-horizontal">
-            <li><a href="#" class="pr-4"><i class="fas fa-umbrella pr-2"></i>Suport</a></li>
-            <li><a href="#" class="pr-4">About</a></li>
-            <li><a href="#" class="pr-4">Contact Us</a></li>
-            <li><a href="#">The Team</a></li>
-          </ul>
+            <ul class="list-group list-group-horizontal">
+              <li><a href="#" class="pr-4"><i class="fas fa-umbrella pr-2"></i>Suport</a></li>
+              <li><a href="#" class="pr-4">About</a></li>
+              <li><a href="#" class="pr-4">Contact Us</a></li>
+              <li><a href="#">The Team</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
       </section>
       <section>
-         <div class="row d-flex justify-content-between terms">
+        <div class="row d-flex justify-content-between terms">
           <div>
             <ul class="list-group list-group-horizontal">
               <li><a href="#" class="pr-4">© 2019 unity.com</a></li>
@@ -326,7 +340,6 @@
               <li><a href="#">Send Feedback</a></li>
             </ul>
           </div>
-
           <div>
           <ul class="list-group list-group-horizontal">
             <li><a href="#" class="pr-3"><i class="fab fa-facebook-square text-body"></i></a></li>
@@ -339,13 +352,27 @@
       </section>
     </div>
    </footer>
-
-
-
-
-  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      var modal = document.getElementById("popup-message");
+      var btn = document.getElementById("compose-btn");
+      var i = document.getElementsByClassName("fa-times")[0];
+      
+      btn.onclick = function() {
+      modal.style.display = "block";
+    }
+      i.onclick = function() {
+      modal.style.display = "none";
+    }
+     window.onclick = function(event) {
+      if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  </script>
 </body>
 </html>

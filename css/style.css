@@ -26,11 +26,115 @@
   to {
     opacity: 1; } }
 
+header .drop .btn {
+  font-size: 1rem; }
+
+header .drop a {
+  font-size: .9rem;
+  color: #9fa0a1; }
+
+header .search {
+  border-left: 0.08rem solid #e9ecee;
+  border-right: 0.08rem solid #e9ecee; }
+  header .search .dropdown-menu {
+    width: 12rem; }
+  header .search input {
+    border: none;
+    color: #9fa0a1; }
+  header .search .form-check {
+    border-bottom: 0.08rem solid #e9ecee;
+    padding-left: 2.5rem;
+    color: #9fa0a1;
+    font-size: .85rem; }
+
+header .topic i:hover {
+  color: #f9bc64; }
+
+header .topic .dropdown-menu {
+  width: 20rem; }
+  header .topic .dropdown-menu .row {
+    border-bottom: 0.08rem solid #e9ecee;
+    background: none; }
+  header .topic .dropdown-menu a {
+    color: #9fa0a1;
+    transition: all 1s ease; }
+  header .topic .dropdown-menu .col-6 {
+    padding-left: 2.5rem; }
+
+header .topic .categories li {
+  list-style-type: disc;
+  color: #f9bc64; }
+
+header .notification i {
+  position: relative; }
+
+header .notification .quantity {
+  font-size: .6rem;
+  position: absolute;
+  top: -.01rem;
+  left: .4rem;
+  padding: .04rem .25rem;
+  border-radius: .2rem;
+  color: #fff;
+  background: red; }
+
+header .notification .dropdown-menu {
+  width: 15rem; }
+  header .notification .dropdown-menu a {
+    white-space: normal; }
+    header .notification .dropdown-menu a span {
+      font-size: .7rem; }
+  header .notification .dropdown-menu p {
+    font-size: .8rem;
+    padding-left: 2rem;
+    color: #9fa0a1; }
+  header .notification .dropdown-menu img {
+    width: 2.5rem; }
+
+header .user .dropdown-menu ul {
+  border-bottom: 0.08rem solid #e9ecee; }
+  header .user .dropdown-menu ul a {
+    border: none;
+    color: #5c6166;
+    transition: all 1s ease; }
+    header .user .dropdown-menu ul a p:hover {
+      color: #f9bc64; }
+
+header .menu {
+  border-bottom: 0.08rem solid #e9ecee; }
+  header .menu .nav-link {
+    color: #5b6065;
+    font-size: .85rem;
+    transition: all 1s ease; }
+    header .menu .nav-link:hover {
+      color: #f9bc64; }
+  header .menu .btn {
+    background: #e9ecee;
+    border-radius: 0; }
+  header .menu .dropdown-menu {
+    width: 18rem;
+    padding-left: 2.5rem; }
+  header .menu .list-item {
+    list-style: disc;
+    color: #f9bc64; }
+    header .menu .list-item a {
+      color: #9fa0a1;
+      font-size: .8rem; }
+  header .menu .page-item {
+    font-size: .85rem; }
+  header .menu .page-link {
+    color: #3f4041;
+    background-color: #e9ecee;
+    transition: all 1s ease; }
+    header .menu .page-link:hover {
+      background-color: #f9bc64;
+      color: #fff; }
+
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #f8f9fa; }
   body .dropdown-menu {
-    margin-top: 1.8rem;
+    margin-top: 1.5rem;
     border-top: 0.08rem solid #f9bc64; }
     body .dropdown-menu a:hover {
       color: #f9bc64; }
@@ -192,99 +296,6 @@ body {
     body .sign-in .form .optional .form-check, body .sign-up .form .optional .form-check {
       padding-left: 2.6rem;
       padding-right: 2rem; }
-  body header .drop .btn {
-    font-size: 1rem; }
-  body header .drop a {
-    font-size: .9rem;
-    color: #9fa0a1; }
-  body header .search {
-    border-left: 0.08rem solid #e9ecee;
-    border-right: 0.08rem solid #e9ecee; }
-    body header .search .dropdown-menu {
-      width: 12rem; }
-    body header .search input {
-      border: none;
-      color: #9fa0a1; }
-    body header .search .form-check {
-      border-bottom: 0.08rem solid #e9ecee;
-      padding-left: 2.5rem;
-      color: #9fa0a1;
-      font-size: .85rem; }
-  body header .topic i:hover {
-    color: #f9bc64; }
-  body header .topic .dropdown-menu {
-    width: 20rem; }
-    body header .topic .dropdown-menu .row {
-      border-bottom: 0.08rem solid #e9ecee;
-      background: none; }
-    body header .topic .dropdown-menu a {
-      color: #9fa0a1;
-      transition: all 1s ease; }
-    body header .topic .dropdown-menu .col-6 {
-      padding-left: 2.5rem; }
-  body header .topic .categories li {
-    list-style-type: disc;
-    color: #f9bc64; }
-  body header .notification i {
-    position: relative; }
-  body header .notification .quantity {
-    font-size: .6rem;
-    position: absolute;
-    top: -.01rem;
-    left: .4rem;
-    padding: .04rem .25rem;
-    border-radius: .2rem;
-    color: #fff;
-    background: red; }
-  body header .notification .dropdown-menu {
-    width: 15rem; }
-    body header .notification .dropdown-menu a {
-      white-space: normal; }
-      body header .notification .dropdown-menu a span {
-        font-size: .7rem; }
-    body header .notification .dropdown-menu p {
-      font-size: .8rem;
-      padding-left: 2rem;
-      color: #9fa0a1; }
-    body header .notification .dropdown-menu img {
-      width: 2.5rem; }
-  body header .user .dropdown-menu ul {
-    border-bottom: 0.08rem solid #e9ecee; }
-    body header .user .dropdown-menu ul a {
-      border: none;
-      color: #5c6166;
-      transition: all 1s ease; }
-      body header .user .dropdown-menu ul a p:hover {
-        color: #f9bc64; }
-  body header .menu {
-    border-bottom: 0.08rem solid #e9ecee; }
-    body header .menu .nav-link {
-      color: #5b6065;
-      font-size: .85rem;
-      transition: all 1s ease; }
-      body header .menu .nav-link:hover {
-        color: #f9bc64; }
-    body header .menu .btn {
-      background: #e9ecee;
-      border-radius: 0; }
-    body header .menu .dropdown-menu {
-      width: 18rem;
-      padding-left: 2.5rem; }
-    body header .menu .list-item {
-      list-style: disc;
-      color: #f9bc64; }
-      body header .menu .list-item a {
-        color: #9fa0a1;
-        font-size: .8rem; }
-    body header .menu .page-item {
-      font-size: .85rem; }
-    body header .menu .page-link {
-      color: #3f4041;
-      background-color: #e9ecee;
-      transition: all 1s ease; }
-      body header .menu .page-link:hover {
-        background-color: #f9bc64;
-        color: #fff; }
   body .head-chat p {
     font-size: .8rem; }
   body .chat {
@@ -401,8 +412,6 @@ body {
         body .information .popup .check label, body .information .share .check label {
           font-size: .8rem;
           color: #9fa0a1; }
-        body .information .popup .check textarea, body .information .share .check textarea {
-          font-size: .8rem; }
     body .information .flag {
       top: -24rem;
       left: 12rem; }
@@ -423,16 +432,10 @@ body {
     border-top: 0.08rem solid #e9ecee;
     border-bottom: 0.08rem solid #e9ecee; }
   body .new-topic textarea {
-    border: none;
-    font-size: .85rem; }
+    border: none; }
   body .user_summary {
     position: relative;
     background: #272566; }
-    body .user_summary span {
-      padding: 1.3rem 2rem;
-      border-radius: 50%;
-      font-size: 2rem;
-      background: linear-gradient(140deg, #bb0c7f 39%, #ff004e 100%); }
     body .user_summary img {
       width: 3.3rem;
       height: auto; }
@@ -440,10 +443,6 @@ body {
       border: none;
       color: #fff;
       background-color: #25aae1; }
-    body .user_summary i {
-      position: absolute;
-      top: 1.8rem;
-      left: rem; }
   body .user-menu ul a {
     color: #9fa0a1; }
     body .user-menu ul a:hover {
@@ -457,23 +456,22 @@ body {
   body .active {
     background-color: #f9bc64;
     padding: .5rem .8rem; }
-
-.compose-message {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 60%;
-  box-shadow: 9px 2px 18px -1px rgba(0, 0, 0, 0.15);
-  overflow: auto;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s; }
+  body .compose-message {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    box-shadow: 9px 2px 18px -1px rgba(0, 0, 0, 0.15);
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s; }
 
 footer {
   padding: 2rem 0 2rem 0; }

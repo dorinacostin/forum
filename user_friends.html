@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f1364fd64f.js"></script>
      <script type="text/javascript" src="js/main.js"></script>
-    <title>Costin Dorina</title>
+    <title>Friends</title>
   </head>
   <body>
     <header>
@@ -220,12 +220,13 @@
       <div class="container">
         <div class="row border-bottom py-3 d-flex justify-content-between">
           <ul class="list-group list-group-horizontal">
-            <li class="list-item"><a href="user_summary.html"class="pr-3">Summary</a></li>
-            <li class="list-item"><a href="notifications.html" class="pr-3 text-warning"><i class="fas fa-bell pr-1 text-warning"></i>Notifications</a></li>
-            <li class="list-item"><a href="user_friends.html" class="pr-3"><i class="fas fa-user pr-1 text-muted"></i>Friends</a></li>
+            <li class="list-item"><a href="user_summary.html"class="pr-3 text-muted">Summary</a></li>
+            <li class="list-item"><a href="notifications.html" class="pr-3"><i class="fas fa-bell pr-1 text-muted"></i>Notifications</a></li>
+            <li class="list-item"><a href="user_friends.html" class="pr-3 text-warning"><i class="fas fa-user pr-1 text-warning"></i>Friends</a></li>
+             <!--<li class="list-item"><a href="user_no_friends.html" class="pr-3 text-warning"><i class="fas fa-user pr-1 text-warning"></i>Friends</a></li>-->
             <li class="list-item"><a href="user_messages.html" class="pr-3"><i class="fas fa-envelope pr-1 text-muted"></i>Messages</a></li>
             <li class="list-item"><a href="user_badges.html" class="pr-3"><i class="fas fa-certificate pr-1 text-muted"></i>Badges</a></li>
-            <li class="list-item"><a href="user_settings.html" class="pr-3"><i class="fas fa-cog pr-1 text-muted"></i>Settings</a></li>
+            <li class="list-item"><a href="user_settings.html" class="pr-3 text-muted"><i class="fas fa-cog pr-1 text-muted"></i>Settinhgs</a></li>
           </ul>
           <div class="">
             <a href="#"><i class="fas fa-user-plus pr-2 text-muted"></i></a>
@@ -235,86 +236,282 @@
         </div>
       </div>
     </section>
-    <section class="sider">
-      <div class="container">
-        <div class="row">
-          <div class="col-2 px-0 pt-4">
-            <ul class="pl-0">
-              <li><a href="#" class="text-body font-weight-bold">All</a></li>
-              <li><a href="#" class="text-muted">Responses</a></li>
-              <li><a href="#" class="text-muted">Likes Received</a></li>
-              <li><a href="#" class="text-muted">Mentions</a></li>
-              <li><a href="#" class="text-muted">Edits</a></li>
-              <li><a href="#" class="text-muted">Badges Earned</a></li>
-              <li class="mt-2"><a href="#" class="bg-gray py-2 px-3 text-muted"><i class="fas fa-times pr-3 text-muted"></i>Dismiss All</a></li>
-            </ul>
+     <section class="mt-3">
+       <div class="container px-0">
+        <div class="row head-chat">
+          <div class="col-3 text-left">
+            <p>Users</p> 
           </div>
-          
-          <div class="col-10">
-            <div class="row d-flex justify-content-between py-3 bg-white px-4">
-              <div class="row user-initial">
-                <i class="far fa-gem align-self-center text-muted"></i>
-                <span class="color3 text-white ml-2 mr-3">L</span>
-                <p class="mb-0 align-self-center">Why my payment still pending?</p> 
-              </div>
-              <span class="align-self-center text-muted">12 Oct, 2019</span>
-            </div>
-            <div class="row d-flex justify-content-between py-3 px-4 bg-gray">
-              <div class="row user-initial">
-                <i class="far fa-sun align-self-center text-muted"></i>
-                <span class="color2 text-white ml-2 mr-3">M</span>
-                <p class="mb-0 align-self-center">Earned 'Advanced Badge'</p> 
-              </div>
-              <span class="align-self-center text-muted">13 Oct, 2019</span>
-            </div>
-            <div class="row d-flex justify-content-between py-3 bg-white px-4">
-              <div class="row user-initial">
-                <i class="fas fa-reply align-self-center text-muted"></i>
-                <span class="color6 text-white ml-2 mr-3">F</span>
-                <p class="mb-0 align-self-center">ribbble Invitations Giveaway!</p> 
-              </div>
-              <span class="align-self-center text-muted">15 Oct, 2019</span>
-            </div>
-            <div class="row d-flex justify-content-between py-3 px-4 bg-gray">
-              <div class="row user-initial">
-                <i class="fas fa-reply align-self-center text-muted"></i>
-                <span class="color4 text-white ml-2 mr-3">A</span>
-                <p class="mb-0 align-self-center">ribbble Invitations Giveaway!</p> 
-              </div>
-              <span class="align-self-center text-muted">15 Oct, 2019</span>
-            </div>
-            <div class="row d-flex justify-content-between py-3 bg-white px-4">
-              <div class="row user-initial">
-                <i class="fas fa-link align-self-center text-muted"></i>
-                <span class="color3 text-white ml-2 mr-3">R</span>
-                <p class="mb-0 align-self-center">Need psd documentation on Themeforest</p> 
-              </div>
-              <span class="align-self-center text-muted">1 Nov, 2019</span>
-            </div>
-
+          <div class="col-2">
+            <p>Received</p> 
           </div>
-          
+          <div class="col-2">
+            <p>Given</p> 
+          </div>
+          <div class="col-1">
+            <p>Threads</p> 
+          </div>
+          <div class="col-1">
+            <p>Replies</p> 
+          </div>
+          <div class="col-1">
+            <p>Activity</p> 
+          </div>
+          <div class="col-1">
+            <p>Viewed</p> 
+          </div>
+          <div class="col-1">
+            <p>Read</p> 
+          </div>
         </div>
-        
+     </section>
+      <section>
+       <div class="container">
+        <div class="row chat bg-gray">
+          <div class="col-3 p-4">
+            <div class="row pl-3">
+              <span class="color3 text-white">L</span>
+              <span class="text-muted ml-2">Larry M.</span>   
+            </div>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">2.5k</span>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">1.5k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">12</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">2.0k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">10k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">123k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">102</span>
+          </div>
+        </div>
       </div>
-    </section>
-
+     </section>
+     <section>
+       <div class="container">
+        <div class="row chat bg-white">
+          <div class="col-3 p-4">
+            <div class="row pl-3">
+              <span class="color1 text-white">O</span>
+              <span class="text-muted ml-2">Olly P.</span>   
+            </div>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">2.5k</span>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">1.5k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">2</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">12kk</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">10k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">13k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">56</span>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section>
+       <div class="container">
+        <div class="row chat bg-gray">
+          <div class="col-3 p-4">
+            <div class="row pl-3">
+              <span class="color5 text-gray">N</span>
+              <span class="text-muted ml-2">Nan M.</span>   
+            </div>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">2.5k</span>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">1.5k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">12</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">2.0k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">10k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">123k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">102</span>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section>
+       <div class="container">
+        <div class="row chat bg-white">
+          <div class="col-3 p-4">
+            <div class="row pl-3">
+              <span class="color4 text-white">S</span>
+              <span class="text-muted ml-2">Sissi M.</span>   
+            </div>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">5k</span>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">12k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">10</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">9.0k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">14k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">123k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">102</span>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section>
+       <div class="container">
+        <div class="row chat bg-gray">
+          <div class="col-3 p-4">
+            <div class="row pl-3">
+              <span class="color2 text-white">Z</span>
+              <span class="text-muted ml-2">Zizzy R.</span>   
+            </div>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">2.5k</span>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">1.5k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">12</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">2.0k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">10k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">123k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">102</span>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section>
+       <div class="container">
+        <div class="row chat bg-white">
+          <div class="col-3 p-4">
+            <div class="row pl-3">
+              <span class="color6 text-white">L</span>
+              <span class="text-muted ml-2">Larry</span>   
+            </div>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">2.5k</span>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">1.5k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">12</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">2.0k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">10k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">123k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">102</span>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section>
+       <div class="container">
+        <div class="row chat bg-gray">
+          <div class="col-3 p-4">
+            <div class="row pl-3">
+              <span class="color5 text-white">N</span>
+              <span class="text-muted ml-2">Nikyta R.</span>   
+            </div>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">2.5k</span>
+          </div>
+          <div class="col-2 p-4">
+            <span class="text-muted pl-0">1.5k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">12</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">2.0k</span>
+          </div>
+          <div class="col-1 p-4">
+            <span class="text-muted pl-0">10k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">123k</span>
+          </div>
+           <div class="col-1 p-4">
+            <span class="text-muted pl-0">102</span>
+          </div>
+        </div>
+      </div>
+     </section>
    <footer class="bg-white mt-5">
     <div class="container">
       <section>
-      <div class="row d-flex justify-content-between">
+        <div class="row d-flex justify-content-between">
           <div class="unity">
             <a href="index.html" class="text-body font-weight-bold"><img src="img/message_icon1.svg" class="pr-2">Unity</a>
           </div>
           <div>
-          <ul class="list-group list-group-horizontal">
-            <li><a href="#" class="pr-4"><i class="fas fa-umbrella pr-2"></i>Suport</a></li>
-            <li><a href="#" class="pr-4">About</a></li>
-            <li><a href="#" class="pr-4">Contact Us</a></li>
-            <li><a href="#">The Team</a></li>
-          </ul>
+            <ul class="list-group list-group-horizontal">
+              <li><a href="#" class="pr-4"><i class="fas fa-umbrella pr-2"></i>Suport</a></li>
+              <li><a href="#" class="pr-4">About</a></li>
+              <li><a href="#" class="pr-4">Contact Us</a></li>
+              <li><a href="#">The Team</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
       </section>
       <section>
          <div class="row d-flex justify-content-between terms">
@@ -326,7 +523,6 @@
               <li><a href="#">Send Feedback</a></li>
             </ul>
           </div>
-
           <div>
           <ul class="list-group list-group-horizontal">
             <li><a href="#" class="pr-3"><i class="fab fa-facebook-square text-body"></i></a></li>
@@ -339,11 +535,6 @@
       </section>
     </div>
    </footer>
-
-
-
-
-  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

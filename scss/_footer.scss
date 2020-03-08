@@ -1,0 +1,19 @@
+footer{
+	padding:2rem 0 2rem 0;
+	.d-flex{
+	  a{
+	    color: $text-color;
+	    text-decoration: none;
+	    font-size: .85rem;
+	    transition: all 1s ease;
+	    &:hover{
+	     color:$orange;
+	    }
+	  }
+	}
+	.terms{
+	  margin-top: 1rem;
+	  padding-top: 1rem;
+	  border-top: $border-gray;
+	}
+}

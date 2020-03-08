@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1364fd64f.js"></script>
+    <title>No friends</title>
+  </head>
+  <body>
+    <header>
+      <section class="head bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-2 align-self-center drop">
+              <div class="dropdown">
+                <a href="index.html"><img src="img/message_icon1.svg" class="img-fluid pr-2"></a>
+                <button class="btn font-weight-bold px-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Unity
+                  <i class="fas fa-angle-down ml-2"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Blog</a>
+                  <a class="dropdown-item" href="#">About</a>
+                  <a class="dropdown-item" href="#">Store</a>
+                  <a class="dropdown-item" href="#">Mobile App</a>
+                  <a class="dropdown-item" href="#">Advertise</a>
+                  <a class="dropdown-item" href="#">Need Help</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-flex justify-content-between align-self-center search">
+              <form class="col-10 form-inline md-form form-sm">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input class="form-control form-control-sm ml-3 w-75" type="text"placeholder="Search all forums" aria-label="Search">
+              </form>
+                <div class="dropdown align-self-center">
+                  <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Topic
+                   <i class="fas fa-angle-down ml-2"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right py-0">
+                    <div class="form-check py-2 ">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label ml-1" for="defaultCheck1">
+                        Search Titles Only
+                      </label>
+                    </div>
+                    <div class="form-check py-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label ml-1" for="defaultCheck1">
+                        Show Results as Posts
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="dropdown topic align-self-center pl-3">
+                    <button class="btn px-2" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Latest Topics <i class="fas fa-bars ml-2"></i>
+                    </button>
+                    <div class="dropdown-menu pt-2" aria-labelledby="dropdownMenu2">
+                      <div class="row pt-2">
+                        <div class="col-6">
+                          <ul class="px-0">
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Unread</a></li>
+                            <li><a href="#">Groups</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6">
+                          <ul class="px-0">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Tags</a></li>
+                            <li><a href="#">Shortcuts</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row pt-2">
+                        <div class="col-6">
+                          <span>Categories</span>
+                          <ul class="px-3 categories">
+                            <li><a href="#">Hobbies</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Arts</a></li>
+                            <li><a href="#">Gaming</a></li>
+                            <li><a href="#">Exchange</a></li>
+                            <li><a href="#">Entertainment</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 mt-4">
+                          <ul class="px-3 categories">
+                            <li><a href="#">Social</a></li>
+                            <li><a href="#">Random</a></li>
+                            <li><a href="#">Tech</a></li>
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Pets</a></li>
+                            <li><a href="#">Education</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row pt-2">
+                        <div class="col-6">
+                          <ul class="px-0">
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Blog</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6">
+                          <ul class="px-0">
+                            <li><a href="#">Forum Rules</a></li>
+                            <li><a href="#">About</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="dropdown notification align-self-center mx-2">
+                  <button class="btn notification" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-bell"></i>
+                  <span class="quantity">6</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="far fa-heart mx-3 pt-1"></i>
+                        <span>Roswell.16 feb, 19</span>
+                      </div>
+                      <p class="mb-0">Which movie have you watched recently?</p>
+                    </a>
+                    <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="far fa-comment-dots mx-3 pt-1"></i>
+                        <span>Callis.16 feb, 19</span>
+                      </div>
+                      <p class="mb-0">I got an amzon thingie!</p>
+                    </a>
+                    <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="far fa-sun mx-3 pt-1"></i>
+                        <span>Earned Badge.16 feb, 19</span>
+                      </div>
+                      <div class="row pt-2">
+                        <img src="img/tolk.png" class="img-fluid ml-5">
+                         <p class="pl-3 mb-0">Lets Tolk</p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="far fa-sun mx-3 pt-1"></i>
+                        <span>Earned Badge. 20 feb, 19</span>
+                      </div>
+                      <div class="row pt-2">
+                        <img src="img/face.png" class="img-fluid ml-5">
+                         <p class="pl-3 pt-2 mb-0">Intermediate</p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item px-4 py-3 border-bottom" href="#">
+                      <div class="row">
+                        <i class="fas fa-link mx-3 pt-1"></i>
+                        <span>Callis.16 feb, 19</span>
+                      </div>
+                      <p class="mb-0">Need Video file of that chat.</p>
+                    </a>
+                    <a class="dropdown-item bg-light" href="#">
+                      <p class="text-muted mb-0">view older notifications...</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="row user-initial align-self-center">
+                  <a href="user_summary.html" class="mt-1"><span class="color2 text-white ml-3">A</span></a>
+                  <div class="dropdown notification mx-2">
+                    <button class="btn notification" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     azyrusmax
+                     <i class="fas fa-chevron-down pl-2"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuButton">
+                      <ul class="list-group list-group-horizontal px-4 pt-3 border-bottom pb-3">
+                        <li><a href="user_summary.html"><i class="far fa-bookmark px-3 text-muted"></i></a></li>
+                        <li><a href="user_messages.html"><i class="far fa-comment-alt px-3 text-muted"></i></a></li>
+                        <li><a href="user_settings.html"><i class="fas fa-wrench px-3 text-muted"></i></a></li>
+                        <li><a href="sign-in.html"><i class="fas fa-sign-out-alt px-3 text-muted"></i></a></li>
+                      </ul>
+                      <ul class="mb-0 pl-0 py-3">
+                        <li><a href="#"><p class="mb-1">Dashboard</p></a></li>
+                        <li><a href="#"><p class="mb-1">Badges</p></a></li>
+                        <li><a href="#"><p class="mb-1">My Grpups</p></a></li>
+                        <li><a href="#"><p class="mb-1">Notifications</p></a></li>
+                        <li><a href="#"><p class="mb-1">Topics</p></a></li>
+                        <li><a href="#"><p class="mb-1">Likes</p></a></li>
+                        <li><a href="#"><p class="mb-1">Solved</p></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="img my-4 ml-3"><a href="create_topic_page.html"><img src="img/message_icon2.png"></a></div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>  
+    </section>
+   </header>
+  <section class="user_notifications py-5">
+    <div class="container">
+      <div class="row user_summary bg-transparent my-3">
+       <span class="color3 text-white ml-3">A</span>
+       <h5 class="align-self-center ml-3">azyrusmax</h5>
+       <button type="button" class="my-4 ml-5 px-4">Follow</button>
+      </div>
+    </div>  
+  </section>
+  <section class="user-menu">
+    <div class="container">
+      <div class="row border-bottom py-3 d-flex justify-content-between">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-item"><a href="user_summary.html"class="pr-3 text-muted">Summary</a></li>
+          <li class="list-item"><a href="#"class="pr-3"><i class="fas fa-chart-line pr-1 text-muted"></i>Activity</a></li>
+          <li class="list-item"><a href="notifications.html" class="pr-3"><i class="fas fa-bell pr-1 text-muted"></i>Notifications</a></li>
+          <!--<li class="list-item"><a href="user_friends.html" class="pr-3 text-warning"><i class="fas fa-user pr-1 text-warning"></i>Friends</a></li>-->
+          <li class="list-item"><a href="user_no_friends.html" class="pr-3 text-warning"><i class="fas fa-user pr-1 text-warning"></i>Friends</a></li>
+          <li class="list-item"><a href="#" class="pr-3"><i class="fas fa-users pr-1 text-muted"></i>Groups</a></li>
+          <li class="list-item"><a href="#" class="pr-3"><i class="fas fa-envelope pr-1 text-muted"></i>Messages</a></li>
+          <li class="list-item"><a href="#" class="pr-3"><i class="fas fa-certificate pr-1 text-muted"></i>Badges</a></li>
+          <li class="list-item"><a href="#" class="pr-3"><i class="fas fa-cog pr-1 text-muted"></i>Settinhgs</a></li>
+        </ul>
+        <div class="">
+          <a href="#"><i class="fas fa-user-plus pr-2 text-muted"></i></a>
+          <a href="#"><i class="fas fa-comment-alt pr-2 text-muted"></i></a>
+          <a href="#"><i class="fas fa-flag text-muted"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-5">
+     <div class="container px-0">
+      <div class="col-4 text-center mx-auto user_summary bg-transparent">
+        <i class="fas fa-user-plus fa-7x text-muted"></i>
+        <p class="py-4">Looks like azyrusmax don’t have any friends yet.You can Add him as a friend.</p>
+        <button type="button" class="my-4 px-4 py-2">Add Friend</button>
+      </div>
+      </div>
+   </section>
+   <footer class="bg-white mt-5">
+    <div class="container">
+      <section>
+      <div class="row d-flex justify-content-between">
+          <div class="unity">
+            <a href="index.html" class="text-body font-weight-bold"><img src="img/message_icon1.svg" class="pr-2">Unity</a>
+          </div>
+          <div>
+          <ul class="list-group list-group-horizontal">
+            <li><a href="#" class="pr-4"><i class="fas fa-umbrella pr-2"></i>Suport</a></li>
+            <li><a href="#" class="pr-4">About</a></li>
+            <li><a href="#" class="pr-4">Contact Us</a></li>
+            <li><a href="#">The Team</a></li>
+          </ul>
+        </div>
+      </div>
+      </section>
+      <section>
+         <div class="row d-flex justify-content-between terms">
+          <div>
+            <ul class="list-group list-group-horizontal">
+              <li><a href="#" class="pr-4">© 2019 unity.com</a></li>
+              <li><a href="#" class="pr-4">Terms</a></li>
+              <li><a href="#" class="pr-4">Privacy</a></li>
+              <li><a href="#">Send Feedback</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list-group list-group-horizontal">
+              <li><a href="#" class="pr-3"><i class="fab fa-facebook-square text-body"></i></a></li>
+              <li><a href="#" class="pr-3"><i class="fab fa-twitter text-body"></i></a></li>
+              <li><a href="#" class="pr-3"><i class="fab fa-google-plus-g text-body"></i></a></li>
+              <li><a href="#"><i class="fab fa-dribbble text-body"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
